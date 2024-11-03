@@ -320,6 +320,7 @@ namespace ams::fuse {
 
     DramId GetDramId() {
         /* Get the value. */
+        return DramId_HoagSamsung1y8GBX;
         return static_cast<DramId>(GetDramIdValue(util::BitPack32{GetCommonOdmWord(4)}));
     }
 
